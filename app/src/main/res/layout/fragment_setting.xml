@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context="fragment.SettingFragment">
+<androidx.cardview.widget.CardView
+    android:id="@+id/settingCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/imgSettingCoverPic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/coverpic"
+            android:scaleType="centerCrop"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgSettingProfilePic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"/>
+        <TextView
+            android:id="@+id/txtSettingUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:layout_below="@id/imgSettingProfilePic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
